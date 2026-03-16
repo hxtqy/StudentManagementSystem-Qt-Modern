@@ -1,0 +1,137 @@
+/* 全局变量模拟 */
+/* 背景色: #f5f7fa (浅灰蓝), 控件背景: #ffffff (纯白) */
+/* 强调色: #0078d4 (现代蓝), 悬停色: #2b88d8 */
+/* 边框色: #dcdfe6, 文本色: #303133 */
+
+QWidget {
+    font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+    font-size: 14px;
+    background-color: #f5f7fa;
+    color: #303133;
+}
+
+/* 对话框整体样式 */
+QDialog {
+    background-color: #f5f7fa;
+}
+
+/* 输入框样式 */
+QLineEdit {
+    border: 1px solid #dcdfe6;
+    border-radius: 6px;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    selection-background-color: #0078d4;
+}
+
+QLineEdit:focus {
+    border-color: #0078d4;
+}
+
+QLineEdit:hover {
+    border-color: #c0c4cc;
+}
+
+/* 标签样式 */
+QLabel {
+    font-weight: 500;
+    color: #606266;
+    background-color: transparent;
+}
+
+/* 按钮通用样式 */
+QPushButton {
+    background-color: #ffffff;
+    border: 1px solid #dcdfe6;
+    border-radius: 6px;
+    padding: 10px 20px;
+    min-width: 80px;
+    font-weight: 500;
+    color: #606266;
+}
+
+QPushButton:hover {
+    color: #0078d4;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+}
+
+QPushButton:pressed {
+    background-color: #d9ecff;
+}
+
+/* 特殊强调按钮（如添加） */
+QPushButton#btnAdd {
+    background-color: #0078d4;
+    color: #ffffff;
+    border: none;
+}
+
+QPushButton#btnAdd:hover {
+    background-color: #2b88d8;
+}
+
+QPushButton#btnAdd:pressed {
+    background-color: #006abc;
+}
+
+/* 危险操作按钮（如删除） */
+QPushButton#btnDelete {
+    color: #f56c6c;
+}
+
+QPushButton#btnDelete:hover {
+    background-color: #fef0f0;
+    border-color: #fbc4c4;
+    color: #f56c6c;
+}
+
+/* 表格样式 */
+QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    gridline-color: #ebeef5;
+    outline: none;
+}
+
+QTableWidget::item {
+    padding: 10px;
+    border-bottom: 1px solid #ebeef5;
+}
+
+QTableWidget::item:selected {
+    background-color: #ecf5ff;
+    color: #0078d4;
+}
+
+QHeaderView::section {
+    background-color: #fafafa;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #ebeef5;
+    font-weight: bold;
+    color: #303133;
+}
+
+/* 滚动条美化 */
+QScrollBar:vertical {
+    border: none;
+    background: transparent;
+    width: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #dcdfe6;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #c0c4cc;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
