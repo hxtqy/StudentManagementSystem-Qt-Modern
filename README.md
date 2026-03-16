@@ -26,8 +26,8 @@
 
 ### 1. 克隆项目
 ```bash
-git clone https://github.com/your-username/some-practices.git
-cd some-practices/StudentManagementSystem-Modern
+git clone https://github.com/hxtqy/StudentManagementSystem-Qt-Modern.git
+cd StudentManagementSystem-Qt-Modern
 ```
 
 ### 2. 数据库配置
